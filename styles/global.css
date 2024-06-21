@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  paddin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -20,21 +20,36 @@
   --text: 400 16px/140% var(--font-family);
   --text-sm: 400 16px/160% var(--font-family);
 }
- body{
+
+ body {
   font: var(--text);
-  color: var (--text-color-primary);
+  color: var(--text-color-primary);
   background-color: var(--bg-color);
  }
 
- a{
+ a {
   text-decoration: none;
   color: inherit;
  }
 
- a:hover{
+ a:hover {
   color: var(--brand-color-light);
  }
  
  h1, h2, h3 {
   font: inherit;
+ }
+
+ .container {
+  max-width:1280px;
+  padding-inline: 32px;
+  margin-inline:auto;
+ }
+
+ .grid {
+  display: grid;
+ }
+
+ .grid-flow-col {
+  grid-auto-flow: column;
  }
